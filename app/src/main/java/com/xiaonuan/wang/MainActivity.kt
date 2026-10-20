@@ -87,7 +87,12 @@ fun WebViewScreen(url: String) {
                     mixedContentMode = WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
                     allowFileAccess = true
                     allowContentAccess = true
+                    // 禁用 HTTP 缓存，每次都从网络获取最新页面
+                    cacheMode = WebSettings.LOAD_NO_CACHE
                 }
+
+                // 清除历史缓存数据
+                clearCache(true)
 
                 webViewClient = object : WebViewClient() {
                     override fun shouldOverrideUrlLoading(
