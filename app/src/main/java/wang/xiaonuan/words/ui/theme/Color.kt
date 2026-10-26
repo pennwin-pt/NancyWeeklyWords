@@ -1,4 +1,4 @@
-package com.xiaonuan.wang.ui.theme
+package wang.xiaonuan.words.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

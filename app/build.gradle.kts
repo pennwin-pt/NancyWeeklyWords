@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.xiaonuan.wang"
+    namespace = "wang.xiaonuan.words"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.xiaonuan.wang"
+        applicationId = "wang.xiaonuan.words"
         minSdk = 30
         targetSdk = 37
         versionCode = 1
